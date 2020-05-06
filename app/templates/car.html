@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="section page">
+
+        <div class="wrapper">
+
+            <div class="breadcrumb"><a href="{{ url_for("carPage") }}">Cars</a> &gt; {{ product["name"] }} ></div>
+
+            <div class="car-picture">
+                <span>
+                    <img src="{{ url_for("static", filename=product["img"]) }}" alt="{{ product["name"] }} ?>">
+                </span>
+            </div>
+
+            <div class="car-details">
+
+                <h1><span class="price">{{ product["name"] }}</span>: ${{ product["price"]}} per day</h1>
+                <h1><span class="amountLeft">{{ product["carAmount"] }}</span> left </h1>
+                
+                {% if product["carAmount"] != 0 %}
+                <a href="{{ url_for("checkout") }}" class="button"> Checkout Car</a>
+                {% endif %}
+
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

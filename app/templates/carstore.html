@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block content%}
+<html>
+<link rel="stylesheet" href="../static/css/style.css">
+<body>
+  <h1>Car Store</h1>
+  {% for car in cars %}
+    <div>{{move["title"]}}</div>
+  {%endfor%}
+</body>
+</html>
+{% endblock %}

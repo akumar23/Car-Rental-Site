@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="section banner">
+
+			<div class="wrapper">
+
+				<div class="button">
+					<a href="{{ url_for("carPage") }}">
+						<h2>Hey, I&rsquo;m EZPZ!</h2>
+						<p>Check Out My Cars</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section cars latest">
+
+			<div class="wrapper">
+
+				<h2>EZPZ&rsquo;s Latest Cars</h2>
+
+				<ul class="products">
+                    	{{ product_data }}
+				</ul>
+
+			</div>
+
+		</div>
+{% endblock %}
