@@ -27,7 +27,7 @@ PyGObject==3.32.2
 pyparsing==2.4.5
 python-http-client==3.2.7
 pytz==2019.3
-pyxdg==0.25
+pyxdg==0.26
 requests==2.22.0
 SecretStorage==2.3.1
 sendgrid==6.2.2
